@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <section class="opt">
+    <img src="images/logo-bonus.svg" alt="">  
+  </section>
+
+  <section class="score">
+    <p class="p">score</p>
+    <h1>12</h1>
+  </section>
+
+</header>
+
+  <main>
+    <div class="pentagon">
+      <img class="pentagon-img" src="images/bg-pentagon.svg" alt="">
+    </div>
+    <section class="clicker">
+      <div class="game-div Scissors"><img class="game-img" src="images/icon-scissors.svg" alt=""></div>
+      <div class="game-div Paper"><img class="game-img" src="images/icon-paper.svg" alt=""></div>
+      <div class="game-div Rock"><img class="game-img" src="images/icon-rock.svg" alt=""></div>
+      <div class="game-div lizard"><img class="game-img" src="images/icon-lizard.svg" alt=""></div>
+      <div class="game-div spock"><img class="game-img" src="images/icon-spock.svg" alt=""></div> 
+      
+    </section>
+
+    
+    
+  </main>
+  <h2>Rules</h2>
+  <section class="rules-section">
+    <div>
+      <h3>RULES</h3>
+      <img class="close-icon" src="images/icon-close.svg" alt="">
+    </div>
+      <img class="rues" src="images/image-rules-bonus.svg" alt="">
+  </section>
+
+  <footer>
+    <section class="comparison">
+      <b>YOU PICKED</b>
+      <b>THE HOUSE PICKED</b>
+    </section>
+
+    <section class="notify">
+      <div class="game-final"><img id="game-img" class="ding-img" src="images/icon-scissors.svg" alt=""></div>
+      <div class="results">
+        <span></span>
+        <button>Play Again</button>
+      </div>
+      <div class="game-cpu"><img id="cpu" class="ding-img" src="images/icon-scissors.svg" alt=""></div>
+    </section>
+
+  </footer>
+
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  
+   <script src="index.js"></script>
+</body>
+</html>

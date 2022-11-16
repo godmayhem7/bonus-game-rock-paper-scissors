@@ -1,0 +1,364 @@
+body{
+    background: radial-gradient(circle,hsl(214, 47%, 23%),hsl(237, 49%, 15%)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: Barlow Semi Condensed;
+    box-sizing: border-box;
+}
+
+.p{
+    margin: 0;
+    font-weight: 600;
+    color:  hsl(229, 64%, 46%);
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    color:hsl(217, 16%, 45%);
+}
+
+header{
+    border: 3px solid hsl(217, 16%, 45%);
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.pentagon-img{
+    width: 350px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon{
+    margin-top: 50px;
+}
+
+b{
+    margin: 0 0 15px 0;
+    padding:0;
+    font-weight: 700;
+    font-size: 22px;
+    color:hsl(190, 40%, 89%) ;
+}
+
+
+
+.opt,
+.score{
+    display: flex;
+    flex-direction: column;
+}
+
+.score{
+    background:linear-gradient(hsl(190, 40%, 89%) ,hsl(187, 6%, 72%)) ;
+    width: 100px;
+    align-items: center;
+    border-radius: 15px;
+    height: 120px;
+}
+
+.game-div{
+   width: 120px;
+   height: 120px;
+   border-radius: 200px;
+   background-color:hsl(190, 40%, 89%) ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   cursor: pointer;
+}
+
+h2{
+    padding: 15px 5px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    border-radius: 20px;
+    border: 2px solid hsl(190, 40%, 89%);
+    color: hsl(190, 40%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.Scissors{
+    border: 10px solid hsl(40, 84%, 53%);
+    box-shadow: inset 0 5px 5px 6px grey ;
+    top: -360px;
+    right: 215px;
+}
+
+.Paper{
+    border: 10px solid hsl(230, 89%, 62%);
+    box-shadow: inset 0 5px 5px 6px grey;
+    top: -260px; 
+    right: 50px;
+}
+
+.Rock{
+    border: 10px solid hsl(349, 71%, 52%);
+    box-shadow: inset 0 5px 5px 6px grey ;
+    top: -75px; 
+    right:120px;
+}
+
+.lizard{
+    border: 10px solid hsl(261, 73%, 60%);
+    box-shadow: inset 0 5px 5px 6px grey;
+    top: -75px; 
+    right: 320px;  
+}
+
+.spock{
+    border: 10px solid hsl(189, 59%, 53%);
+    box-shadow: inset 0 5px 5px 6px grey;
+    top: -260px; 
+    right: 375px;
+}
+
+.rules-section{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+}
+
+.rules-section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    color: hsl(217, 16%, 45%);
+}
+
+.close-icon{
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game-final,
+.game-cpu{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    background-color:hsl(190, 40%, 89%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    border: 10px solid hotpink;
+    box-shadow: inset 0 5px 5px 6px grey;
+    position: inherit;
+}
+
+.game-cpu::before{
+    content: "";
+    height: 250px;
+    width: 250px;
+    border: 50px;
+    position: absolute;
+    border-radius: 200px;
+}
+
+.clicker{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+span{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 550px;
+    position: absolute;
+    display: none;
+    top: 250px;
+}
+
+.comparison{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notify{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+button{
+    color: hsl(229, 64%, 46%);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+@media screen and (max-width:380px) {
+
+    body{
+        background: radial-gradient(circle,hsl(214, 47%, 23%),hsl(237, 49%, 15%)) ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        padding-bottom: 100px;
+    }
+
+    header{
+        border: 3px solid hsl(217, 16%, 45%);
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    h2{
+        padding: 15px 5px;
+        font-size: 30px;
+        translate: 150px;
+        transform: translateY(70px);
+        font-weight: 600;
+        margin: 0 0 20px 0;
+        border-radius: 20px;
+        border: 2px solid hsl(190, 40%, 89%);
+        color: hsl(190, 40%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        cursor: pointer;
+        position:absolute;
+        bottom: -50px;
+        left: -35px;
+        right: 300px;
+    }
+
+    .pentagon-img{
+        width: 300px;
+        translate: 80px;
+    }
+
+    .Scissors{
+        border: 10px solid hsl(40, 84%, 53%);
+        box-shadow: inset 0 5px 5px 6px grey ;
+        top: -340px;
+        right: 160px;
+    }
+    
+    .Paper{
+        border: 10px solid hsl(230, 89%, 62%);
+        box-shadow: inset 0 5px 5px 6px grey;
+        top: -240px; 
+        right: 50px;
+    }
+    
+    .Rock{
+        border: 10px solid hsl(349, 71%, 52%);
+        box-shadow: inset 0 5px 5px 6px grey ;
+        top: -75px; 
+        right:70px;
+    }
+    
+    .lizard{
+        border: 10px solid hsl(261, 73%, 60%);
+        box-shadow: inset 0 5px 5px 6px grey;
+        top: -75px; 
+        right: 260px;  
+    }
+
+    .rues{
+        width: 320px;
+    }
+    
+    .spock{
+        border: 10px solid hsl(189, 59%, 53%);
+        box-shadow: inset 0 5px 5px 6px grey;
+        top: -240px; 
+        right: 280px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 350px;
+        position: absolute;
+        display: none;
+        top: 250px;
+    }
+
+    .results{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -140px;
+        left: 100px;
+    }
+}
