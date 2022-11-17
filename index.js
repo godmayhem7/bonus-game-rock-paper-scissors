@@ -36,8 +36,10 @@ play.forEach((playy)=>{
     document.querySelector("span").innerHTML="Draw"
    }else if (yourPick.getAttribute("src")===images[0] && calc===1 || yourPick.getAttribute("src")===images[1] && calc===2 || yourPick.getAttribute("src")===images[2] && calc===3 || yourPick.getAttribute("src")===images[3] && calc===4 || yourPick.getAttribute("src")===images[4] && calc===0 ||yourPick.getAttribute("src")===images[0] && calc===3 || yourPick.getAttribute("src")===images[1] && calc===4 || yourPick.getAttribute("src")===images[2] && calc===0 || yourPick.getAttribute("src")===images[3] && calc===1 ||yourPick.getAttribute("src")===images[4] && calc===2){
     document.querySelector("span").innerHTML="You Win"
+       document.querySelector("h1").innerHTML++
    }else{
     document.querySelector("span").innerHTML="You Lose"
+       document.querySelector("h1").innerHTML--
    }
 
 })
